@@ -107,11 +107,8 @@ def get_chrome_path() -> str:
     system = platform.system()
     
     if system == "Windows":
-        # Common installation path for Windows
-        chrome_path = os.path.join(
-            os.environ.get("PROGRAMFILES", "C:\\Program Files"),
-            "Google\\Chrome\\Application\\chrome.exe"
-        )
+        # Updated Windows Chrome path
+        chrome_path = "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
     elif system == "Darwin":
         # Common installation path for macOS
         chrome_path = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
